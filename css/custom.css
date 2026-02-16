@@ -2038,7 +2038,9 @@ header.main-header .header-sticky.active {
 
 
 
-
+.testimonial-section-img{
+	min-height: 250px;
+}
 .testimonial-slide .sisf-e-inner {
 	padding: 40px 22px;
 	background: rgba(23, 23, 24, 0.5);
@@ -2046,7 +2048,6 @@ header.main-header .header-sticky.active {
 	border-radius: 24px;
 	margin-right: 15px !important;
 }
-
 .testimonial-slide .sisf-e-author h5 {
 	font-size: 16px;
 	font-weight: 400;
