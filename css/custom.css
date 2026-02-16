@@ -2720,7 +2720,7 @@ header.main-header .header-sticky.active {
 .work-perfomance {
 	background-color: transparent;
 	padding: 50px 50px 0 50px;
-	background-image: linear-gradient(135deg, #C0F55B2B 1%, #1C1D20CC 20%);
+	background-image: linear-gradient(135deg, #50452c2b 1%, #1C1D20E6 20%);
 	border: 1px solid #616163;
 	border-radius: 24px 24px 24px 24px;
 	transition: 0.4s ease-in-out;
@@ -2728,7 +2728,8 @@ header.main-header .header-sticky.active {
 
 .work-perfomance .sisf-m-content {
 	background-color: #02010100;
-	background-image: url("../images/home3-elevate_img.png");
+	/* background-image: url("../images/home3-elevate_img.png"); */
+	background-image: linear-gradient(135deg, #50452c2b 1%, #1C1D20CC 20%);
 	justify-content: flex-start;
 	text-align: left;
 	padding-bottom: 35px;
@@ -2739,7 +2740,8 @@ header.main-header .header-sticky.active {
 
 .work-perfomance:hover {
 	background-color: transparent;
-	background-image: linear-gradient(135deg, #000000FA 80%, #C0F55B2B 100%);
+	/* background-image: linear-gradient(135deg, #000000FA 80%, #C0F55B2B 100%); */
+	background-image: linear-gradient(135deg, #a189502b 1%, #1C1D20E6 20%);
 	border: 1px solid var(--main-color);
 	transition: 0.4s ease-in-out;
 }
@@ -2850,6 +2852,9 @@ header.main-header .header-sticky.active {
 	border-top: 0px;
 }
 
+.sisf-m-title{
+	line-height: 2rem;
+}
 .sisf-sis-pricing-table .sisf-m-title-wrapper .sisf-m-title {
 	margin: 0 0 20px 0;
 	font-weight: 600;
@@ -8493,4 +8498,272 @@ select {
 
 .nav-item:hover {
 	color: var(--main-color);
+}
+
+
+.hero-section{
+  width: 100vw;
+  height: 100vh;
+  background-image: url('/images/airbound-deeptech-growth-banner.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.hero-section .container {
+  width: 100%;
+}
+
+.hero-section .sisf-sis-section-title {
+  margin-bottom: 20px;
+}
+
+.hero-section .sisf-m-title {
+  font-size: clamp(24px, 5vw, 48px);
+  line-height: 1.3;
+  margin-bottom: 20px;
+}
+
+.hero-section .work-perfomance {
+  margin-top: 20px;
+}
+
+.hero-section .work-perfomance .sisf-m-title {
+  font-size: clamp(16px, 3vw, 24px);
+  line-height: 1.4;
+  margin-bottom: 15px;
+}
+
+.hero-section .work-perfomance .sisf-m-text {
+  font-size: clamp(14px, 2vw, 16px);
+  line-height: 1.6;
+}
+
+/* Mobile Responsive Styles */
+@media only screen and (max-width: 767px) {
+  .hero-section {
+    min-height: 100vh;
+    padding: 80px 0 40px 0;
+  }
+  
+  .hero-section .sisf-sis-section-title br {
+    display: none;
+  }
+  
+  .hero-section .sisf-m-title {
+    font-size: 28px !important;
+    line-height: 1.3 !important;
+  }
+  
+  .hero-section .work-perfomance {
+    padding: 15px;
+    margin-top: 15px;
+  }
+  
+  .hero-section .work-perfomance .sisf-m-title {
+    font-size: 18px !important;
+    line-height: 1.4 !important;
+  }
+  
+  .hero-section .work-perfomance .sisf-m-text {
+    font-size: 14px !important;
+    line-height: 1.5 !important;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .hero-section .sisf-m-title {
+    font-size: 24px !important;
+  }
+  
+  .hero-section .work-perfomance .sisf-m-title {
+    font-size: 16px !important;
+  }
+  
+  .hero-section .work-perfomance .sisf-m-text {
+    font-size: 13px !important;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .hero-section .sisf-m-title {
+    font-size: 36px !important;
+  }
+  
+  .hero-section .work-perfomance .sisf-m-title {
+    font-size: 20px !important;
+  }
+}
+
+
+.sisf-m-title {
+  font-size: 24px;
+}
+
+/* Medium screens (tablets and up) */
+@media (min-width: 768px) {
+  .sisf-m-title {
+    font-size: 36px;
+  }
+}
+
+/* Large screens (desktops and up) */
+@media (min-width: 1200px) {
+  .sisf-m-title {
+    font-size: 44px;
+  }
+}
+
+/* ========================================
+   Counter Box Grid Layout - Equal Heights
+   ======================================== */
+
+/* Apply Grid to the row containing counter boxes */
+.about-us.section .col-12 .row.align-items-center {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  align-items: stretch;
+}
+
+/* Reset Bootstrap column styles for grid items */
+.about-us.section .col-12 .row.align-items-center > [class*="col-"] {
+  width: auto;
+  max-width: none;
+  padding: 0;
+}
+
+/* Counter box styling */
+.about-us.section .counter-box {
+  height: 100%;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-us.section .counter-box .sisf-sis-box-counter {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px;
+  text-align: center;
+}
+
+.about-us.section .counter-box .counter-item {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.about-us.section .counter-box .counter-item .d-flex {
+  justify-content: center !important;
+}
+
+/* Counter title styling */
+.about-us.section .counter-box .counter-title {
+  text-align: center;
+  width: 100%;
+}
+
+.about-us.section .counter-box .counter-title h2 {
+  font-size: 42px !important;
+  font-weight: 400;
+  line-height: 1.2;
+  margin-bottom: 12px;
+  text-align: center;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+/* Counter content styling */
+.about-us.section .counter-box .counter-content {
+  text-align: center;
+  width: 100%;
+}
+
+.about-us.section .counter-box .counter-content h3 {
+  font-size: 14px !important;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  padding: 0 5px;
+}
+
+/* Tablet - 2 columns */
+@media only screen and (max-width: 991px) {
+  .about-us.section .col-12 .row.align-items-center {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+  
+  .about-us.section .counter-box {
+    min-height: 180px;
+  }
+  
+  .about-us.section .counter-box .sisf-sis-box-counter {
+    padding: 20px;
+  }
+  
+  .about-us.section .counter-box .counter-title h2 {
+    font-size: 38px !important;
+  }
+  
+  .about-us.section .counter-box .counter-content h3 {
+    font-size: 13px !important;
+  }
+}
+
+/* Mobile - 1 column */
+@media only screen and (max-width: 767px) {
+  .about-us.section .col-12 .row.align-items-center {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  
+  .about-us.section .counter-box {
+    min-height: 160px;
+  }
+  
+  .about-us.section .counter-box .sisf-sis-box-counter {
+    padding: 18px;
+  }
+  
+  .about-us.section .counter-box .counter-title h2 {
+    font-size: 34px !important;
+  }
+  
+  .about-us.section .counter-box .counter-content h3 {
+    font-size: 12px !important;
+  }
+  
+  .about-us.section .counter-box .counter-content h3 br {
+    display: inline;
+  }
+}
+
+/* Small Mobile */
+@media only screen and (max-width: 480px) {
+  .about-us.section .counter-box {
+    min-height: 140px;
+  }
+  
+  .about-us.section .counter-box .sisf-sis-box-counter {
+    padding: 15px;
+  }
+  
+  .about-us.section .counter-box .counter-title h2 {
+    font-size: 30px !important;
+  }
+  
+  .about-us.section .counter-box .counter-content h3 {
+    font-size: 11px !important;
+  }
 }
