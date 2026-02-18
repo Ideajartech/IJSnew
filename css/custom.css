@@ -816,7 +816,8 @@ header.main-header .header-sticky.active {
 	/* background-color:rgb(36, 28, 13) */
 }
 #sisf-page-header-inner {
-	background-color: rgb(36, 29, 17) !important;
+	top:-1px !important;
+	background-color: rgba(18, 15, 9, 0.8) !important;
 }
 #sisf-page-header-inner .input-group .form-control {
 	/* background: transparent !important; */
@@ -3092,6 +3093,9 @@ Digon Home-page 4 How it work Section css
 .sisf-our-work .sisf-icon-font-awesome {
 	color: #0C1213;
 	transition: 0.4s ease-in-out;
+}
+.sisf-m-title{
+	line-height: 1;
 }
 
 .sisf-our-work .sisf-m-title-text {
@@ -7494,6 +7498,17 @@ select {
 	}
 
 }
+ 
+@media (max-width: 987px) {
+#sisf-page-header-inner .container {
+display: flex !important;
+align-items: flex-start !important;
+justify-content: space-between !important;
+}
+.navbar-toggle{
+ padding-top:10px;
+}
+}
 
 @media only screen and (max-width: 767px) {
 
@@ -7524,7 +7539,7 @@ select {
 
 	.sisf-main-header,
 	#sisf-page-header-inner {
-		padding-top: 5px;
+		padding-top: 0px;
 	}
 
 	.section-row {
@@ -7564,6 +7579,20 @@ select {
 		display: flex !important;
 		align-items: center;
 	}
+	/* .navbar-toggle{
+		padding-top:10px;
+	} */
+	/* .sisf-skin--light .container{
+		display: flex !important;
+		align-items: start !important;
+		justify-content: space-between !important;
+	}
+	#sisf-page-header-inner .container{
+		display: flex !important;
+		align-items: start !important;
+		justify-content: space-between !important;
+	} */
+
 
 	.section-title h2 {
 		font-size: 24px;
@@ -8521,6 +8550,14 @@ select {
 
 .hero-section .container {
   width: 100%;
+
+}
+
+@media(max-width:987px)
+{
+	.index-hero-section{
+		margin-top:-80px;
+	}
 }
 
 .hero-section .sisf-sis-section-title {
@@ -8778,7 +8815,7 @@ select {
 /* index hteml hero sectoin  */
 .index-hero-section{
 	height: 100vh;
-	margin-top: -135px;
+	/* margin-top: -135px; */
     background-image: url('/images/home-banner.png');
 	background-size: cover;
 	background-position: center;
