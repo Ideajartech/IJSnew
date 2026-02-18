@@ -8850,7 +8850,7 @@ justify-content: space-between !important;
   color: white;                    /* White text */
   padding: 0.6rem 1.5rem;          /* Vertical and horizontal padding */
   border: none;                    /* No border */
-  border-radius: 0.5rem;           /* Rounded corners (8px) */
+  border-radius: 2rem;           /* Rounded corners (8px) */
   font-size: 1rem;                 /* Base font size */
   font-weight: 600;                /* Semi-bold */
   cursor: pointer;                 /* Pointer on hover */
