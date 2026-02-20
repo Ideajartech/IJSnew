@@ -168,8 +168,8 @@ h4 {
 
 h5 {
 	font-weight: 600;
-	text-transform: uppercase;
-	font-size: 18px;
+	/* text-transform: uppercase; */
+	font-size: 16px;
 	line-height: 1.39em;
 	letter-spacing: 0.075em;
 	-ms-word-wrap: break-word;
@@ -9020,4 +9020,54 @@ font-size:28px;
   .counter-content-new h3 {
     font-size: 20px !important;
   }
+}
+
+.sisf-m-bicolor-heading{
+	font-size:24px;
+	line-height: 1.3em;
+}
+
+/* ── FAQ Section Responsive ── */
+/* Make the inner row a flex-column on mobile so heading sits above accordion */
+@media (max-width: 767.98px) {
+  .faq.section .row.align-items-center {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Heading column: full width, appears first */
+  .faq.section .row.align-items-center > .col-6:first-child {
+    width: 100%;
+    max-width: 100%;
+    flex: 0 0 100%;
+    order: 1;
+    text-align: center;
+    margin-bottom: 16px;
+  }
+
+  /* Accordion column: full width, appears second */
+  .faq.section .row.align-items-center > .col-6:last-child {
+    width: 100%;
+    max-width: 100%;
+    flex: 0 0 100%;
+    order: 2;
+  }
+
+  /* Tighten accordion button height */
+  .faq.section .accordion-button {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 14px;
+  }
+
+  /* Tighten accordion body */
+  .faq.section .accordion-body {
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+}
+
+/* ── Our Process / Pricing-Plans: vertical gap between cards ── */
+.pricing-plans.section .row [class*="col-"] {
+  margin-bottom: 24px;
 }
