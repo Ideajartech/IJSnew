@@ -445,38 +445,43 @@
 	// =======================================================================================
 	if ($('.logo-slider').length) {
 		const LogoSlider = new Swiper('.logo-slider', {
-			slidesPerView: 5,
-			speed: 1000,
-			spaceBetween: 10,
+			slidesPerView: 6,
+			speed: 3000,
+			spaceBetween: 20,
 			loop: true,
 			autoplay: {
-				delay: 5000,
-			},
-			pagination: {
-				el: '.swiper-pagination',
-				clickable: true,
+				delay: 0,
+				disableOnInteraction: false,
+				pauseOnMouseEnter: true,
 			},
 			breakpoints: {
 				320: {
-					slidesPerView: 1,
+					slidesPerView: 3,
+					spaceBetween: 10,
 				},
 				480: {
-					slidesPerView: 2,
+					slidesPerView: 4,
+					spaceBetween: 12,
 				},
 				650: {
-					slidesPerView: 3,
+					slidesPerView: 5,
+					spaceBetween: 16,
 				},
 				767: {
-					slidesPerView: 4,
+					slidesPerView: 5,
+					spaceBetween: 20,
 				},
 				1024: {
-					slidesPerView: 5,
+					slidesPerView: 6,
+					spaceBetween: 20,
 				},
 				1367: {
-					slidesPerView: 5,
+					slidesPerView: 6,
+					spaceBetween: 20,
 				},
 				1920: {
-					slidesPerView: 5,
+					slidesPerView: 7,
+					spaceBetween: 24,
 				}
 			}
 		});
