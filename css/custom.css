@@ -572,7 +572,7 @@ body {
 .section-title h2 {
 	text-transform: none;
 	margin-bottom: 20px;
-	font-size: 48px;
+	font-size: 42px;
 	line-height: 1.3em;
 	font-weight: 700;
 	letter-spacing: 0.2px;
@@ -3096,7 +3096,7 @@ Digon Home-page 4 How it work Section css
 	transition: 0.4s ease-in-out;
 }
 .sisf-m-title{
-	line-height: 1;
+	line-height: 1.3em;
 }
 
 .sisf-our-work .sisf-m-title-text {
@@ -7029,7 +7029,7 @@ select {
 
 	.section-title h2 {
 		font-size: 42px;
-		line-height: 1.5;
+		line-height: 1.3em;
 	}
 
 	.section-row {
@@ -7158,7 +7158,7 @@ select {
 	}
 
 	.section-title h2 {
-		line-height: 1.5;
+		line-height: 1.3em;
 	}
 
 	.section-title p {
@@ -7597,7 +7597,7 @@ justify-content: space-between !important;
 
 	.section-title h2 {
 		font-size: 28px;
-		line-height: 1.5;
+		line-height: 1.3em;
 	}
 
 	.video-play-button {
@@ -8070,7 +8070,7 @@ justify-content: space-between !important;
 	}
 
 	.work-process .sisf-m-title-text {
-		font-size: 16px;
+		font-size: 18px;
 	}
 
 	.work-perfomance {
@@ -8120,7 +8120,7 @@ justify-content: space-between !important;
 	}
 
 	.portfolio-category .sisf-e-content h4 {
-		line-height: normal;
+		line-height: 0.8;
 	}
 
 	.portfolio-category .sisf-e-content p {
@@ -8332,7 +8332,7 @@ justify-content: space-between !important;
 
 .founder-content h2.sisf-m-title {
 	margin-bottom: 20px;
-	font-size: 48px;
+	font-size: 42px;
 	font-weight: 700;
 	line-height: 1.3em;
 }
@@ -8660,7 +8660,7 @@ justify-content: space-between !important;
 /* Large screens (desktops and up) */
 @media (min-width: 1200px) {
   .sisf-m-title {
-    font-size: 40px;
+    font-size: 36px;
   }
 }
 
@@ -8719,7 +8719,7 @@ justify-content: space-between !important;
 }
 
 .about-us.section .counter-box .counter-title h2 {
-  font-size: 42px !important;
+  font-size: 36px !important;
   font-weight: 400;
   line-height: 1.2;
   margin-bottom: 12px;
@@ -8727,6 +8727,7 @@ justify-content: space-between !important;
   word-wrap: break-word;
   overflow-wrap: break-word;
 }
+
 
 /* Counter content styling */
 .about-us.section .counter-box .counter-content {
@@ -8807,11 +8808,11 @@ justify-content: space-between !important;
   }
   
   .about-us.section .counter-box .counter-title h2 {
-    font-size: 30px !important;
+    font-size: 24px !important;
   }
   
   .about-us.section .counter-box .counter-content h3 {
-    font-size: 11px !important;
+    font-size: 16px !important;
   }
 }
 
@@ -8915,3 +8916,30 @@ justify-content: space-between !important;
 		height:60%;
 	}
 } */
+@media (min-width: 576px) and (max-width: 1200px) {
+	 .sisf-m-title{
+		font-size: 42px !important;
+	 }
+}
+.sisf-m-title-small
+{
+	font-size:32px;
+	font-weight: 500;
+}
+@media(max-width:576px)
+{
+.sisf-m-title-small{
+	font-size: 20px;
+}
+}
+
+.author-heading{
+	font-size:42px;
+    line-height: 1.3em;
+}
+@media (max-width:576px)
+{ .author-heading{
+font-size:28px;
+}
+	
+}
