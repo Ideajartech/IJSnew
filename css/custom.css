@@ -8943,3 +8943,81 @@ font-size:28px;
 }
 	
 }
+
+
+
+/* ── Growth Marketing Counter Cards ─────────────────────────────── */
+
+/* Make the row stretch so all cards are equal height */
+.about-us.section .row.align-items-center,
+.counter-box-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
+/* Each column also stretches */
+.counter-box-row > [class*="col-"],
+.about-us.section .row.align-items-center > [class*="col-"] {
+  display: flex;
+  flex-direction: column;
+}
+
+/* The counter box itself fills its column */
+.sisf-sis-box-counter {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* ── Number (span.counter-new) ── */
+.counter-new {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+/* ── Title wrapper (div.counter-title-new h2) ── */
+.counter-title-new {
+  margin-bottom: 10px; /* gap between title and content below */
+}
+
+.counter-title-new h2 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 0;
+  line-height: 1.2;
+}
+
+/* h4 "Countries" sub-label inside the title */
+.counter-title-new h4 {
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0;
+}
+
+/* ── Label below the number (div.counter-content-new h3) ── */
+.counter-content-new {
+  margin-top: 24px;
+  margin-bottom: 20px;
+}
+
+.counter-content-new h3 {
+  font-size: 18px !important;
+  font-weight: 500;
+  line-height: 1.3;
+  margin: 0;
+}
+
+/* ── Small screens (<576px): bump up to 20px ── */
+@media (max-width: 576px) {
+  .counter-new {
+    font-size: 20px;
+  }
+  .counter-title-new h2 {
+    font-size: 20px;
+  }
+  .counter-content-new h3 {
+    font-size: 20px !important;
+  }
+}
