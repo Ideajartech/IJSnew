@@ -556,7 +556,7 @@ body {
 }
 
 .section-title h1 {
-	font-size: 54px;
+	font-size: 48px;
 	font-weight: 700;
 	line-height: 1.25em;
 	text-transform: none;
@@ -1739,7 +1739,13 @@ header.main-header .header-sticky.active {
 	font-family: var(--default-font);
 	font-size: 42px;
 }
+@media (max-width:1080px )
+{
+	.counter-title h2{
 
+		font-size: 32px !important;
+	}
+}
 .counter-box .counter-content h3 {
 	font-weight: 400;
 	font-size: 20px;
@@ -2278,9 +2284,10 @@ header.main-header .header-sticky.active {
 }
 
 .about-us-count .counter-item {
-	display: flex;
+	display: flex ;
+	/* flex-direction: column; */
 	align-items: center;
-	justify-content: space-between;
+	justify-content: space-around ;
 }
 
 .about-us-count .counter-item h2 {
@@ -6558,6 +6565,19 @@ select {
 	transition: all 0.3s ease-in-out;
 }
 
+.footer-social-links h3{
+	font-size:18px;
+	font-weight: 400;
+}
+
+@media(max-width:576px)
+{
+	.footer-social-links h3{
+		font-size:16px;
+		/* font-weight:400; */
+	}
+}
+
 .footer-links h3,
 .footer-contact h3 {
 	margin-top: 0;
@@ -7104,7 +7124,7 @@ select {
 	}
 
 	.section-title h2 {
-		font-size: 42px;
+		font-size: 28px !important;
 		line-height: 1.3em;
 	}
 
@@ -8722,8 +8742,8 @@ justify-content: space-between !important;
 
 
 .sisf-m-title {
-  font-size: 28px;
-  font-weight:700;
+  font-size: 24px;
+  font-weight:500;
 }
 
 /* Medium screens (tablets and up) */
@@ -8911,7 +8931,7 @@ justify-content: space-between !important;
 } */
 .stats-section-hero-title {
   font-weight: 700;
-  font-size: 24px; /* default for small screens */
+  font-size: 28px; /* default for small screens */
   line-height: 1.2;
 }
 
@@ -8992,15 +9012,23 @@ justify-content: space-between !important;
 		height:60%;
 	}
 } */
-@media (min-width: 576px) and (max-width: 1200px) {
+@media (max-width: 1080px) {
 	 .sisf-m-title{
-		font-size: 42px !important;
+		font-size: 24px !important;
 	 }
 }
 .sisf-m-title-small
 {
 	font-size:32px;
 	font-weight: 500;
+}
+@media(min-width:576px) and( max-width:1080px)
+{
+
+
+.sisf-m-title-small{
+	font-size:24px !important;
+}
 }
 @media(max-width:576px)
 {
@@ -9013,9 +9041,9 @@ justify-content: space-between !important;
 	font-size:42px;
     line-height: 1.3em;
 }
-@media (max-width:576px)
+@media (max-width:1080px)
 { .author-heading{
-font-size:28px;
+font-size:28px !important;
 }
 	
 }
@@ -9039,12 +9067,22 @@ font-size:28px;
   flex-direction: column;
 }
 
-/* The counter box itself fills its column */
+/* The counter box itself fills its column — give it a minimum height */
 .sisf-sis-box-counter {
   flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  min-height: 150px;
+  padding: 20px 24px;
+}
+
+/* counter-item fills the full box height — number ↑, label ↓ */
+.counter-box .counter-item {
+  flex: 1;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-around !important;
+  height: 100%;
 }
 
 /* ── Number (span.counter-new) ── */
@@ -9074,8 +9112,8 @@ font-size:28px;
 
 /* ── Label below the number (div.counter-content-new h3) ── */
 .counter-content-new {
-  margin-top: 24px;
-  margin-bottom: 20px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .counter-content-new h3 {
@@ -9251,3 +9289,10 @@ font-size:28px;
     object-position: center;
   }
 }
+
+
+/* .counter-box .counter-item{
+	display: flex  !important;
+	flex-direction: column !important;
+	justify-content: space-around !important;
+} */
