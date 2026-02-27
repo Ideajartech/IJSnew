@@ -9040,6 +9040,7 @@ justify-content: space-between !important;
 .author-heading{
 	font-size:42px;
     line-height: 1.3em;
+	font-weight: 700;
 }
 @media (max-width:1080px)
 { .author-heading{
@@ -9296,3 +9297,13 @@ font-size:28px !important;
 	flex-direction: column !important;
 	justify-content: space-around !important;
 } */
+
+/* ── LinkedIn Calendar Background Positioning for Mobile ── */
+@media (max-width: 576px) {
+  .linkedin-calendar-section {
+    background-position: 50% !important; /* Shift right and down */
+    /* background-size: 150% !important; Slightly enlarge to keep it visible down low */
+	background-repeat: no-repeat;
+    padding: 60px 0 160px 0 !important; /* Add extra padding at the bottom so the book fits */
+  }
+}
