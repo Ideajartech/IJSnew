@@ -1724,10 +1724,16 @@ header.main-header .header-sticky.active {
 }
 
 .marketing-solution .sisf-m-title {
-	font-size: 34px;
-	line-height: 42px;
+	font-size: 36px;
+	/* line-height: 42px; */
 }
 
+@media(max-width:1080px)
+{
+	.marketing-solution .sisf-m-title{
+		font-size:24px;
+	}
+}
 .counter-box .counter-item {
 	border-right: 1px solid #2E2E2A;
 }
@@ -8749,14 +8755,14 @@ justify-content: space-between !important;
 /* Medium screens (tablets and up) */
 @media (min-width: 768px) {
   .sisf-m-title {
-    font-size: 36px;
+    font-size: 32px;
   }
 }
 
 /* Large screens (desktops and up) */
 @media (min-width: 1200px) {
   .sisf-m-title {
-    font-size: 36px;
+    font-size: 32px;
   }
 }
 
@@ -8992,7 +8998,7 @@ justify-content: space-between !important;
 
 
 .home-bottom-key-points{
-   font-size: 36px;
+   font-size: 32px;
 }
 @media( max-width:768px){
 	.home-bottom-key-points{
