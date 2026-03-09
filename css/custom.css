@@ -2921,7 +2921,7 @@ header.main-header .header-sticky.active {
 }
 
 .sisf-sis-pricing-table .sisf-m-top {
-	padding: 40px 40px 20px 40px;
+	padding: 20px 20px 10px 20px;
 }
 
 .sisf-sis-pricing-table .sisf-m-content .sisf-e-item {
@@ -2930,11 +2930,16 @@ header.main-header .header-sticky.active {
 
 .sisf-sis-pricing-table .sisf-m-title {
 	font-family: var(--default-font);
-	font-size: 24px;
+	font-size: 20px;
 	font-weight: 400;
 
-	letter-spacing: 1.2px;
-	margin: 0px 0px 0px 15px;
+	letter-spacing: 0.5px;
+	margin: 0px 0px 0px 10px;
+}
+
+.sisf-sis-pricing-table .sisf-m-title-icon h2 {
+	font-size: 30px;
+	margin-bottom: 0px;
 }
 
 .sisf-sis-pricing-table .sisf-m-price {
@@ -3731,8 +3736,8 @@ Digon Home-page 4 Our Team Section css
 }
 
 .sisf-page-single-top .sisf-e-bottom-holder h2 {
-	font-size: 62px;
-	line-height: 80px;
+	font-size: 40px;
+	line-height: 50px;
 	font-weight: 700;
 	margin-bottom: 25px;
 	transition: 0.4s ease-in-out;
@@ -9389,23 +9394,23 @@ select {
 /* ── "The Story" Responsive Typography ── */
 @media (max-width: 991px) {
 	.sisf-page-single-top .sisf-e-bottom-holder h2 {
-		font-size: 48px;
-		line-height: 58px;
+		font-size: 34px;
+		line-height: 44px;
 		margin-bottom: 20px;
 	}
 }
 
 @media (max-width: 767px) {
 	.sisf-page-single-top .sisf-e-bottom-holder h2 {
-		font-size: 34px;
-		line-height: 44px;
+		font-size: 28px;
+		line-height: 38px;
 		margin-bottom: 15px;
 	}
 }
 
 @media (max-width: 480px) {
 	.sisf-page-single-top .sisf-e-bottom-holder h2 {
-		font-size: 28px;
-		line-height: 38px;
+		font-size: 24px;
+		line-height: 34px;
 	}
 }
